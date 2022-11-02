@@ -1,16 +1,23 @@
+"""
+@author Keila Ramírez <kramireza10@miumg.gt
+@description 
+@cite este código está basado en el siguiente enlace https://www.tutorialesprogramacionya.com/pythonya/
+@license 
+@date 2022/09/03
+"""
+import sys
 import tkinter as tk
 from tkinter import scrolledtext as st
-import sys
-from tkinter import filedialog as fd
 from tkinter import messagebox as mb
-
+from tkinter import filedialog as fd
 
 class Proyecto:
 
     def __init__(self):
         self.base=tk.Tk()
         self.agregar_nuevomenu()
-        self.scrolledtext1=st.ScrolledText(self.base, width=50, height=30)
+        #Le damos tamaño y color a la ventana de texto usando la tabla de colores html. 
+        self.scrolledtext1=st.ScrolledText(self.base, width=50, height=30,background='#F7F8E0')
         self.scrolledtext1.grid(column=0,row=0,padx=15,pady=15)
         #se coloca el titulo que aparecerá en la ventana.
         self.base.title ("Proyecto III")
@@ -29,19 +36,23 @@ class Proyecto:
         self.base.config(menu=menu1)
         options = tk.Menu(menu1, tearoff=1)
         options2=tk.Menu(menu1, tearoff=1)
-        options.add_command(label="Guardar archivo", background="#ADD8E6", foreground="#FF0000", activebackground="#32CDFF", command=self.guardarcomo)
+        options.add_command(label="Guardar archivo como", background="#ADD8E6", foreground="#FF0000", activebackground="#32CDFF", command=self.guardarcomo)
         options.add_separator()
+        options.add_command(label="Guardar archivo", background="#ADD8E6", foreground="#FF0000", activebackground="#32CDFF", command=self.guardar)
         options.add_command(label="abrir archivo", background="#ADD8E6", foreground="#FF0000", activebackground="#32CDFF", command=self.abrir)
         options2.add_command(label="manual de usuario", background="#ADD8E6", foreground="#FF0000", activebackground="#32CDFF",command=self.link_clicked)
-        options2.add_command(label="información", background="#ADD8E6", foreground="#FF0000", activebackground="#32CDFF",command=self.abrir)
+        options2.add_command(label="información", background="#ADD8E6", foreground="#FF0000", activebackground="#32CDFF",command=self.info)
         options.add_separator()
         options.add_command(label="Salir", command=self.salir)
         menu1.add_cascade(label="Archivo", menu=options)  
         menu1.add_cascade(label="Ayuda", menu=options2)  
+        menu1.add_cascade(label="Editar", menu=options2)  
 
     def salir(self):
         sys.exit(0)
-
+    
+    def guardar(self):
+        nombrearch=fd.SaveAs(initialdir = "C:\\Users\\Compu Fire\\OneDrive\\Escritorio\\tkinder",title = "Guardar ")
     def guardarcomo(self):
         nombrearch=fd.asksaveasfilename(initialdir = "C:\\Users\\Compu Fire\\OneDrive\\Escritorio\\tkinder",title = "Guardar como",filetypes = (("txt files","*.txt"),("todos los archivos","*.*"),("Archivos pdf","*.pdf")))
         if nombrearch!='':
@@ -63,7 +74,8 @@ class Proyecto:
         import webbrowser
         webbrowser.open("https://github.com/Valki11/PROYECTOIII.git")
     def info(self):
-        archivo=fd.Open("C:\\Users\\Compu Fire\\OneDrive\\Escritorio\\tkinder\\información.txt") 
+        import webbrowser
+        webbrowser.open("C:\\Users\\Compu Fire\\OneDrive\\Escritorio\\tkinder\\información.txt") 
         
             
     
