@@ -5,6 +5,7 @@
 @license 
 @date 2022/09/03
 """
+#importamos librería tkinter
 import sys
 import os
 import tkinter as tk
@@ -39,9 +40,7 @@ class Proyecto:
         options = tk.Menu(menu1, tearoff=1)
         options2=tk.Menu(menu1, tearoff=1)
         options3=tk.Menu(menu1, tearoff=1)
-        #se utiliza un separador para generar una línea entre las subpartes y la opción salir , para evitar confusiones.
-        options.add_separator()
-        options.add_command(label="Salir", command=self.salir)
+        
         menu1.add_cascade(label="Archivo", menu=options)  
         menu1.add_cascade(label="Editar", menu=options3)  
         menu1.add_cascade(label="Ayuda", menu=options2)  
@@ -54,7 +53,9 @@ class Proyecto:
         options2.add_command(label="integrantes", background="#ADD8E6", foreground="#FF0000", activebackground="#32CDFF",command=self.integrantes)
         options3.add_command(label='Deshacer', background="#ADD8E6", foreground="#FF0000", activebackground="#32CDFF",command=self.deshacer)
         options3.add_command(label='Rehacer', background="#ADD8E6", foreground="#FF0000", activebackground="#32CDFF",command=self.rehacer)
-        
+        #se utiliza un separador para generar una línea entre las subpartes y la opción salir , para evitar confusiones.
+        options.add_separator()
+        options.add_command(label="Salir", command=self.salir)
     #función para salir de nuestra ventana.
     def salir(self):
         sys.exit(0)
@@ -78,18 +79,22 @@ class Proyecto:
             archi1.close()
             self.scrolledtext1.delete("1.0", tk.END) 
             self.scrolledtext1.insert("1.0", contenido)
-            
+    #función para redireccionarnos a otra ventana donde se encuentra la documentación externa.        
     def link_clicked(self):
         import webbrowser
         webbrowser.open("https://github.com/Valki11/PROYECTOIII.git")
+    #función para redireccionarnos donde se encuentra la información de la aplicación.           
     def info(self):
         import webbrowser
         webbrowser.open("C:\\Users\\Compu Fire\\OneDrive\\Escritorio\\tkinder\\información.txt") 
+    #función para redireccionarnos donde se encuentra la información de los autores de la aplicación.    
     def integrantes(self):
         import webbrowser
-        webbrowser.open("C:\\Users\\Compu Fire\\OneDrive\\Escritorio\\tkinder\\integrantes.txt")       
+        webbrowser.open("C:\\Users\\Compu Fire\\OneDrive\\Escritorio\\tkinder\\integrantes.txt") 
+    #función para eliminar lo que se selecciona en la ventana de texto         
     def deshacer(self):
        self.base('<Control-z>', self.deshacer)
+    #función para restaurar lo que se eliminó en la ventana de texto
     def rehacer(self):
         self.base('<Control-y>', self.rehacer)
 App=Proyecto()
