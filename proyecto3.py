@@ -1,10 +1,3 @@
-"""
-@authors Keila Ramírez <kramireza10@miumg.gt
-@description 
-@cite 
-@license GPL v3
-@date 2022/11/03
-"""
 import tkinter as tk
 from tkinter import scrolledtext as st
 import sys
