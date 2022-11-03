@@ -1,6 +1,6 @@
 """
 @author Keila Ramírez <kramireza10@miumg.gt
-@description 
+@description aplicación con interfaz gráfica que pueda leer un archivo de texto
 @cite este código está basado en el siguiente enlace https://www.tutorialesprogramacionya.com/pythonya/
 @license 
 @date 2022/09/03
