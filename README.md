@@ -71,6 +71,44 @@ A continuación se muestra una lista de todas las diferentes opciones de diálog
 - filedialog.askopenfilenames()
 - filedialog.askopenfiles()
 
-##### *GRID*
+##### GRID
 El método grid nos permite posicionar los widgets en una celda en especifico, indicamos la celda usando el índice de fila y columna correspondiente, el ancho y la altura de cada celda son configurables, además un widget puede ocupar varias celdas si lo deseamos, usando grid podemos crear fácilmente interfaces gráficas de usuario tipo formulario.
 Un ejemplo simple, para posicionar el widget w usando el método grid() deberemos indicar como mínimo la fila y la columna donde este se ubicará, de este modo: w.grid(row=1, column=2) en este ejemplo el widget w se ubicará en la celda correspondiente a la fila 1 y la columna 2, los índices de filas y columnas inician de cero.
+
+##### *GEOMETRY*
+Este método se usa para establecer las dimensiones de la ventana de Tkinter y se usa para establecer la posición de la ventana principal en el escritorio del usuario.
+##### *INCONBITMAP*
+Tanto las ventanas principales (creadas vía la clase tk.Tk) como las ventanas secundarias (tk.Toplevel) tienen por defecto un ícono con el logo de Tcl/Tk. Configurar las ventanas de una aplicación de escritorio con íconos propios le dará a nuestro producto un aire más profesional. El ícono de una ventana también suele ser mostrado por el sistema operativo en la barra de tareas o aplicaciones. En este artículo analizaremos las diversas formas de hacerlo en las distintas plataformas soportadas por Tk (Windows, Linux y Mac).Las ventanas de Tk proveen tres métodos para configurar un ícono:
+- iconbitmap()
+- iconmask()
+- iconphoto()
+
+
+##### *ADD_COMMAND*
+Nos sirve para añadir un botón o una opción a un menú, por ello utilizamos el método add_command().
+##### *ADD_CASCADE*
+Cada menú que queramos ubicar en la barra de menús también se crea usando la clase tk.Menu. De modo que ahora tenemos dos instancias: barra_menus, el contenedor de todos los menús de la ventana, y menu_archivo, menú al cual en seguida agregaremos algunos botones. Para agregar menús a una barra de menús se utiliza el método _add_cascade()_, que recibe como argumento el menú (menu) para ser insertado y el texto (label) con que se quiere mostrar.
+
+##### *SHOWINFO*
+Se emplea para informar al usuario sobre alguna cuestión o bien exhortarlo a tomar una decisión.
+
+Las funciones para generar cuadros de diálogo en una aplicación de Tcl/Tk están definidas en el módulo tkinter.messagebox (tkMessageBox en Python 3), y son las siguientes:
+
+- showinfo()
+- showwarning()
+- showerror()
+- askquestion()
+- askyesno()
+- askokcancel()
+- askyesnocancel()
+- askretrycancel()
+
+##### *LINK_CLICKED y WEBBROWSER*
+Tk no provee por defecto la funcionalidad de enlaces o hipervínculos, tal como lo hacen otras librerías para la creación de interfaces gráficas.  El hipervínculo puede realizar cualquier acción al momento de ser presionado. Si quieres que abra la dirección de una página web, el módulo estándar webbrowser te permite hacerlo.
+```
+    def link_clicked(self):
+        import webbrowser
+        webbrowser.open("link que desea")
+```
+##### Colores html
+Nos basamos en la tabla de colores html del siguiente [enlace](https://html-color-codes.info/codigos-de-colores-hexadecimales/)
