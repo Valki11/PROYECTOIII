@@ -41,3 +41,8 @@ Si planeas colaborar con otras personas en el código de Python u hospedar el pr
 - _Existe una guía detallada para la instalación , se le presentará unas series de preguntas para configurar su entorno , si usará todas las opciones predeterminas solo haga clic en "next" cada vez que lo vea, si usted quiere cambiar alguna variable en su entorno puede elegir la que más se acople a sus necesidades._
 
 - Si por algun motivo no está familiarizado con GIT, también están [las guías de GitHub](https://guides.github.com/) las cuales puede utilizar como herramienta de apoyo.
+
+
+## Tareas comunes 
+-----
+
