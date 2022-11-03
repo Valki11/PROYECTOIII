@@ -61,7 +61,7 @@ Crea un cuadro de mensaje de información predeterminado.
 ##### *FILEDIALOG*
 El módulo de diálogo de archivos de Python Tkinter le ofrece un conjunto de diálogos únicos para usar cuando se trata de archivos. Tkinter tiene una amplia variedad de diálogos diferentes, pero los de filedialog están diseñados específicamente para la selección de archivos. Y como se esperaba de los cuadros de diálogo, estos se realizan de una manera muy fácil de usar.
 
-A continuación se muestra una lista de todas las diferentes opciones de diálogo disponibles. Asegúrese de importar filedialog desde tkinter como se muestra a continuación. Si desea usar tkinter además de filedialog (que definitivamente lo hará), tendrá que importar tkinter por separado.
+A continuación se muestra una lista de todas las diferentes opciones de diálogo disponibles. Asegúrese de importar filedialog desde tkinter como se muestra a continuación. Si desea usar tkinter además de filedialog (que definitivamente lo hará), tendrá que importar [tkinter por separado](https://docs.python.org/es/3.9/library/dialog.html#:~:text=tkinter%2Ffiledialog.py-,El%20m%C3%B3dulo%20tkinter.,de%20selecci%C3%B3n%20de%20archivos%2Fdirectorios.).
 
 - filedialog.asksaveasfilename()
 - filedialog.asksaveasfile()
