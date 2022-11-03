@@ -1,8 +1,8 @@
 """
-@author Keila Ramírez <kramireza10@miumg.gt
-@description 
+@authors Keila Ramírez <kramireza10@miumg.gt, José Miguel Arellano <jarellanob@miumg.edu.gt
+@description aplicación con interfaz gráfica que pueda leer un archivo de texto
 @cite este código está basado en el siguiente enlace https://www.tutorialesprogramacionya.com/pythonya/
-@license 
+@Freeware License versión 1.0
 @date 2022/09/03
 """
 #importamos librería tkinter
@@ -61,10 +61,10 @@ class Proyecto:
         sys.exit(0)
     #función para guardar el archivo. 
     def guardar(self):
-        namearch=fd.SaveAs(master=None,initialdir = "C:\\Users\\Compu Fire\\OneDrive\\Escritorio\\tkinder",title = "Guardar ")
+        namearch=fd.SaveAs(master=None,initialdir = "C:\\Users\\Compu Fire\\OneDrive\\Escritorio\\tkinter",title = "Guardar ")
     #función para colocarle el nombre con el cual queremos guardar el archivo de nuestra ventana, se le colocó la dirección de la carpeta en la que estamos trabajando para un orden más estético.
     def guardarcomo(self):
-        namearch=fd.asksaveasfilename(initialdir = "C:\\Users\\Compu Fire\\OneDrive\\Escritorio\\tkinder",title = "Guardar como",filetypes = (("txt files","*.txt"),("todos los archivos","*.*"),("Archivos pdf","*.pdf")))
+        namearch=fd.asksaveasfilename(initialdir = "C:\\Users\\Compu Fire\\OneDrive\\Escritorio\\tkinter",title = "Guardar como",filetypes = (("txt files","*.txt"),("todos los archivos","*.*"),("Archivos pdf","*.pdf")))
         if namearch!='':
             archi1=open(namearch, "w", encoding="utf-8")
             archi1.write(self.scrolledtext1.get("1.0", tk.END))
@@ -73,7 +73,7 @@ class Proyecto:
             mb.showinfo("notify!", "Proceso finalizado con éxito")
     #función para abrir algún archivo que se encuentre dentro de nuestro pc .
     def abrir(self):
-        nombrearch=fd.askopenfilename(initialdir = 'C:\\Users\\Compu Fire\\OneDrive\\Escritorio\\tkinder' ,title = "Seleccione archivo",filetypes = (("Archivos pdf","*.pdf"),("txt files","*.txt"),("todos los archivos","*.*")))
+        nombrearch=fd.askopenfilename(initialdir = 'C:\\Users\\Compu Fire\\OneDrive\\Escritorio\\tkinter' ,title = "Seleccione archivo",filetypes = (("Archivos pdf","*.pdf"),("txt files","*.txt"),("todos los archivos","*.*")))
         if nombrearch!='':
             archi1=open(nombrearch, "r")
             contenido=archi1.read()
@@ -87,11 +87,11 @@ class Proyecto:
     #función para redireccionarnos donde se encuentra la información de la aplicación.           
     def info(self):
         import webbrowser
-        webbrowser.open("C:\\Users\\Compu Fire\\OneDrive\\Escritorio\\tkinder\\información.txt") 
+        webbrowser.open("C:\\Users\\Compu Fire\\OneDrive\\Escritorio\\tkinter\\información.txt") 
     #función para redireccionarnos donde se encuentra la información de los autores de la aplicación.    
     def integrantes(self):
         import webbrowser
-        webbrowser.open("C:\\Users\\Compu Fire\\OneDrive\\Escritorio\\tkinder\\integrantes.txt") 
+        webbrowser.open("C:\\Users\\Compu Fire\\OneDrive\\Escritorio\\tkinter\\integrantes.txt") 
     #función para eliminar lo que se selecciona en la ventana de texto         
     def deshacer(self):
        self.base('<Control-z>', self.deshacer)
