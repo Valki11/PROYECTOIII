@@ -46,3 +46,5 @@ Si planeas colaborar con otras personas en el código de Python u hospedar el pr
 ## Tareas comunes 
 -----
 
+##### Uso de librería Tkinter
+El paquete tkinter («interfaz Tk») es la interfaz por defecto de Python para el kit de herramientas de GUI Tk. Tanto Tk como tkinter están disponibles en la mayoría de las plataformas Unix, así como en sistemas Windows (Tk en sí no es parte de Python, es mantenido por ActiveState).Para indagar mejor sobre la misma está su documentación [oficial](https://docs.python.org/es/3/library/tkinter.html#tkinter-life-preserver) 
