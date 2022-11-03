@@ -64,12 +64,12 @@ El módulo de diálogo de archivos de Python Tkinter le ofrece un conjunto de di
 A continuación se muestra una lista de todas las diferentes opciones de diálogo disponibles. Asegúrese de importar filedialog desde tkinter como se muestra a continuación. Si desea usar tkinter además de filedialog (que definitivamente lo hará), tendrá que importar tkinter por separado.
 
 >  filedialog.asksaveasfilename()
- filedialog.asksaveasfile()
-filedialog.askopenfilename()
-filedialog.askopenfile()
-filedialog.askdirectory()
-filedialog.askopenfilenames()
-filedialog.askopenfiles()
+ >filedialog.asksaveasfile()
+>filedialog.askopenfilename()
+>filedialog.askopenfile()
+>filedialog.askdirectory()
+>filedialog.askopenfilenames()
+>filedialog.askopenfiles()
 
 ##### GRID
 El método grid nos permite posicionar los widgets en una celda en especifico, indicamos la celda usando el índice de fila y columna correspondiente, el ancho y la altura de cada celda son configurables, además un widget puede ocupar varias celdas si lo deseamos, usando grid podemos crear fácilmente interfaces gráficas de usuario tipo formulario.
