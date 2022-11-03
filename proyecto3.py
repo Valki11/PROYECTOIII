@@ -61,7 +61,7 @@ class Proyecto:
         sys.exit(0)
     #función para guardar el archivo. 
     def guardar(self):
-        namearch=fd.SaveAs(master=None,initialdir = "C:\\Users\\Compu Fire\\OneDrive\\Escritorio\\tkinter",title = "Guardar ")
+        namearch=fd.SaveAs(initialdir = "C:\\Users\\Compu Fire\\OneDrive\\Escritorio\\tkinter",title = "Guardar ")
     #función para colocarle el nombre con el cual queremos guardar el archivo de nuestra ventana, se le colocó la dirección de la carpeta en la que estamos trabajando para un orden más estético.
     def guardarcomo(self):
         namearch=fd.asksaveasfilename(initialdir = "C:\\Users\\Compu Fire\\OneDrive\\Escritorio\\tkinter",title = "Guardar como",filetypes = (("txt files","*.txt"),("todos los archivos","*.*"),("Archivos pdf","*.pdf")))
