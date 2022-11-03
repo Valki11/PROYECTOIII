@@ -58,7 +58,7 @@ El módulo tkinter.messagebox proporciona una clase base de plantilla, así como
 > class tkinter.messagebox.Message(master=None, **options)
 Crea un cuadro de mensaje de información predeterminado.
 
-##### FILEDIALOG
+##### *FILEDIALOG*
 El módulo de diálogo de archivos de Python Tkinter le ofrece un conjunto de diálogos únicos para usar cuando se trata de archivos. Tkinter tiene una amplia variedad de diálogos diferentes, pero los de filedialog están diseñados específicamente para la selección de archivos. Y como se esperaba de los cuadros de diálogo, estos se realizan de una manera muy fácil de usar.
 
 A continuación se muestra una lista de todas las diferentes opciones de diálogo disponibles. Asegúrese de importar filedialog desde tkinter como se muestra a continuación. Si desea usar tkinter además de filedialog (que definitivamente lo hará), tendrá que importar tkinter por separado.
@@ -71,6 +71,6 @@ A continuación se muestra una lista de todas las diferentes opciones de diálog
 - filedialog.askopenfilenames()
 - filedialog.askopenfiles()
 
-##### GRID
+##### *GRID*
 El método grid nos permite posicionar los widgets en una celda en especifico, indicamos la celda usando el índice de fila y columna correspondiente, el ancho y la altura de cada celda son configurables, además un widget puede ocupar varias celdas si lo deseamos, usando grid podemos crear fácilmente interfaces gráficas de usuario tipo formulario.
 Un ejemplo simple, para posicionar el widget w usando el método grid() deberemos indicar como mínimo la fila y la columna donde este se ubicará, de este modo: w.grid(row=1, column=2) en este ejemplo el widget w se ubicará en la celda correspondiente a la fila 1 y la columna 2, los índices de filas y columnas inician de cero.
