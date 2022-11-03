@@ -42,9 +42,35 @@ Si planeas colaborar con otras personas en el código de Python u hospedar el pr
 
 - Si por algun motivo no está familiarizado con GIT, también están [las guías de GitHub](https://guides.github.com/) las cuales puede utilizar como herramienta de apoyo.
 
-
-## Tareas comunes 
+## Tareas comunes :
+#### ¿Qué son y cuáles son sus funciones?
 -----
+##### *Uso de librería Tkinter*
+El paquete tkinter («interfaz Tk») es la interfaz por defecto de Python para el kit de herramientas de GUI Tk. Tanto Tk como tkinter están disponibles en la mayoría de las plataformas Unix, así como en sistemas Windows (Tk en sí no es parte de Python, es mantenido por ActiveState).Para indagar mejor sobre la misma está su documentación [oficial](https://docs.python.org/es/3/library/tkinter.html#tkinter-life-preserver).
 
-##### Uso de librería Tkinter
-El paquete tkinter («interfaz Tk») es la interfaz por defecto de Python para el kit de herramientas de GUI Tk. Tanto Tk como tkinter están disponibles en la mayoría de las plataformas Unix, así como en sistemas Windows (Tk en sí no es parte de Python, es mantenido por ActiveState).Para indagar mejor sobre la misma está su documentación [oficial](https://docs.python.org/es/3/library/tkinter.html#tkinter-life-preserver) 
+##### *SCROLLEDTEXT*
+tkinter.scrolledtext — Widget de texto desplazado
+El módulo tkinter.scrolledtext proporciona una clase del mismo nombre que implementa un widget de texto básico que tiene una barra de desplazamiento vertical configurada para hacer «lo correcto». Usar la clase ScrolledText es mucho más fácil que configurar un widget de texto y una barra de desplazamiento directamente.
+
+##### *MESSAGEBOX*
+tkinter.messagebox — Indicadores de mensajes de Tkinter
+El módulo tkinter.messagebox proporciona una clase base de plantilla, así como una variedad de métodos convenientes para configuraciones de uso común. Los cuadros de mensaje son modales y devolverán un subconjunto de (Verdadero, Falso, OK, Ninguno, Sí, No) según la selección del usuario. Los estilos y diseños de cuadros de mensajes comunes incluyen, entre otros:
+> class tkinter.messagebox.Message(master=None, **options)
+Crea un cuadro de mensaje de información predeterminado.
+
+##### FILEDIALOG
+El módulo de diálogo de archivos de Python Tkinter le ofrece un conjunto de diálogos únicos para usar cuando se trata de archivos. Tkinter tiene una amplia variedad de diálogos diferentes, pero los de filedialog están diseñados específicamente para la selección de archivos. Y como se esperaba de los cuadros de diálogo, estos se realizan de una manera muy fácil de usar.
+
+A continuación se muestra una lista de todas las diferentes opciones de diálogo disponibles. Asegúrese de importar filedialog desde tkinter como se muestra a continuación. Si desea usar tkinter además de filedialog (que definitivamente lo hará), tendrá que importar tkinter por separado.
+
+>  filedialog.asksaveasfilename()
+ filedialog.asksaveasfile()
+filedialog.askopenfilename()
+filedialog.askopenfile()
+filedialog.askdirectory()
+filedialog.askopenfilenames()
+filedialog.askopenfiles()
+
+##### GRID
+El método grid nos permite posicionar los widgets en una celda en especifico, indicamos la celda usando el índice de fila y columna correspondiente, el ancho y la altura de cada celda son configurables, además un widget puede ocupar varias celdas si lo deseamos, usando grid podemos crear fácilmente interfaces gráficas de usuario tipo formulario.
+Un ejemplo simple, para posicionar el widget w usando el método grid() deberemos indicar como mínimo la fila y la columna donde este se ubicará, de este modo: w.grid(row=1, column=2) en este ejemplo el widget w se ubicará en la celda correspondiente a la fila 1 y la columna 2, los índices de filas y columnas inician de cero.
