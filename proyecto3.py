@@ -3,7 +3,7 @@
 @description aplicación con interfaz gráfica que pueda leer un archivo de texto
 @cite este código está basado en el siguiente enlace https://www.tutorialesprogramacionya.com/pythonya/
 @Freeware License versión 1.0
-@date 2022/09/03
+@date 2022/11/03
 """
 #importamos librería tkinter
 import sys
