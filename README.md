@@ -13,7 +13,7 @@ Visual Studio Code Version 1.72 disponible, recuerda tener presente de que los t
 ```
 git clone https://github.com/Valki11/PROYECTOIII.git
 ```
-### Instalación de Python:
+# Instalación de Python:
 Python se puede descargar de manera gratuita de su [página oficial](https://www.python.org/downloads/).
 Sobre el instalador haga doble clic. En la ventana que salga es
 recomendable dejar las configuraciones por defecto que sugiere
