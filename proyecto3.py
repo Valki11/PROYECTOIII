@@ -23,7 +23,7 @@ class Proyecto:
         self.scrolledtext1.grid(column=0,row=0,padx=15,pady=15)
         #se coloca el titulo que aparecerá en la ventana.
         self.base.title ("Proyecto III")
-        #Le damos un tamaño estándar a la ventana 
+        #Le damos un tamaño a la ventana 
         self.base.geometry("460x520")
         #Le damos un color a la ventana, en este caso nos basamos en la tabla de colores html. 
         self.base.config(background='#A9E2F3')
@@ -61,7 +61,7 @@ class Proyecto:
         sys.exit(0)
     #función para guardar el archivo. 
     def guardar(self):
-        namearch=fd.SaveAs(initialdir = "C:\\Users\\Compu Fire\\OneDrive\\Escritorio\\tkinder",title = "Guardar ")
+        namearch=fd.SaveAs(master=None,initialdir = "C:\\Users\\Compu Fire\\OneDrive\\Escritorio\\tkinder",title = "Guardar ")
     #función para colocarle el nombre con el cual queremos guardar el archivo de nuestra ventana, se le colocó la dirección de la carpeta en la que estamos trabajando para un orden más estético.
     def guardarcomo(self):
         namearch=fd.asksaveasfilename(initialdir = "C:\\Users\\Compu Fire\\OneDrive\\Escritorio\\tkinder",title = "Guardar como",filetypes = (("txt files","*.txt"),("todos los archivos","*.*"),("Archivos pdf","*.pdf")))
