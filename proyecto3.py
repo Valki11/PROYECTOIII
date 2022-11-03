@@ -69,6 +69,7 @@ class Proyecto:
             archi1=open(namearch, "w", encoding="utf-8")
             archi1.write(self.scrolledtext1.get("1.0", tk.END))
             archi1.close()
+      #Nos muestra en una caja de texto una notificación cuando hayamos guardado el archivo .
             mb.showinfo("notify!", "Proceso finalizado con éxito")
     #función para abrir algún archivo que se encuentre dentro de nuestro pc .
     def abrir(self):
